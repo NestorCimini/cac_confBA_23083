@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferencia Bs As</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+
+            <div class="encabezado-contenedor">
+                <div class="contenedor-logo">
+                    <img src="./assets/img/codoacodo.png" alt="Logo de codo a codo" class="encabezado-logo">
+                    <h1 class="encabezado-titulo">Conf Bs As</h1>
+                </div>
+                <nav class="navegador">
+                        <li class="item-lista"><a href="#banner">La conferencia</a></li>
+                        <li class="item-lista"><a href="#oradores">Los oradores</a></li>
+                        <li class="item-lista"><a href="#ubicacion">El lugar y la fecha</a></li>
+                        <li class="item-lista"><a href="#enviar">Conviertete en orador</a></li>
+                        <li class="item-lista"><a href="#">Comprar tickets</a></li>
+                </nav>
+            </div>   
+
+    </header>
+    
+    <main>
+        <section class="banner">
+            <div class="banner-opacidad">
+                <div class="banner-contenido">
+                    <h2 class="banner-titulo">Conf Bs As</h2>
+                    <p class="banner-texto">Bs As llega por primera vez a Argentina un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <div class="banner-botones">
+                        <button class="boton boton-transparente">Quiero ser orador</button>
+                        <button class="boton">Comprar tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="oradores" id="oradores">
+            <div class="contenedor-oradores">
+                <div class="contenedor-titulo">
+                    <h3>Conoce a los<br><span>oradores</span></h3>
+                </div>
+                <div class="contenedor-tarjetas">
+                    <div class="tarjeta">
+                        <img src="/assets/img/steve.jpg" alt="Imagen de Steve Jobs" class="tarjeta-img">
+                        <h5 class="etiqueta amarilla">JavaScript</h5>
+                        <h5 class="etiqueta celeste">React</h5>
+                        <h3>Steve Jobs</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam quasi iste repellat, atque hic amet officia veritatis enim sed soluta itaque alias ea, blanditiis praesentium laudantium? Est quasi distinctio possimus?</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="/assets/img/bill.jpg" alt="Imagen de Bill Gates" class="tarjeta-img">
+                        <h5 class="etiqueta amarilla">JavaScript</h5>
+                        <h5 class="etiqueta celeste">React</h5>
+                        <h3>Bill Gates</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus adipisci voluptatibus quaerat maxime? Temporibus, accusamus tempore ipsam omnis illum inventore corporis odit nesciunt ratione. Aspernatur ipsam ipsa magni illo!</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="/assets/img/ada.jpeg" alt="Imagen de Ada Lovelace" class="tarjeta-img">
+                        <h5 class="etiqueta gris">Negocios</h5>
+                        <h5 class="etiqueta rojo">Startups</h5>
+                        <h3>Ada Lovelace</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo exercitationem doloremque odio, culpa facilis aut recusandae a eos perferendis placeat explicabo tempora totam aspernatur sint beatae, non dignissimos fuga maiores!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ubicacion" id="ubicacion">
+            <div class="contenedor-ubicacion">
+                <img src="/assets/img/honolulu.jpg" alt="Playas de Honolulu" class="ubicacion-img">
+                <div class="ubicacion-informacion">
+                    <h3 class="informacion-titulo">Bs As -Octubre</h3>
+                    <p class="informacion-parrafo">Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos, Honolulu es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla ded Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+                    <button class="ubicacion-boton">Conocé mas</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="enviar" id="enviar">
+            <form action="#" class="formulario">
+                <div class="contenedor-titulo">
+                    <h3>Conviertete en un<br><span>orador</span></h3>
+                    <p>Anótate como orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+                </div>
+                <div class="input-datos">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                </div>
+                <textarea name="textarea" id="textarea placeholder="Sobre que quieres hablar?" cols="44" rows="6" class="area-texto"></textarea>
+                <h5 class="recordatorio">Recuerda incluir un titulo para tu charla</h5>
+                <button class="boton-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <a href="#">Preguntas<br class="salto"> frecuentes</a>
+            <a href="#">Contáctanos</a>
+            <a href="#">Prensa</a>
+            <a href="#">Conferencias</a>
+            <a href="#">Términos y<br class="salto"> condiciones</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Estudiantes</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
