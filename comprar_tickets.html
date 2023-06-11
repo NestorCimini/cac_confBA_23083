@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferencia - Tickets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tickets_estilos.css">
+</head>
+<body>
+    <header class="encabezado">
+
+        <div class="encabezado-contenedor">
+            <div class="contenedor-logo">
+                <h1 class="encabezado-titulo">Conf Bs As</h1>
+            </div>
+            <nav class="navegador">
+                    <li class="item-lista"><a href="index.html#banner">La conferencia</a></li>
+                    <li class="item-lista"><a href="index.html#oradores">Los oradores</a></li>
+                    <li class="item-lista"><a href="index.html#ubicacion">El lugar y la fecha</a></li>
+                    <li class="item-lista"><a href="index.html#enviar">Conviertete en orador</a></li>
+                    <li class="item-lista"><a href="#">Comprar tickets</a></li>
+            </nav>
+        </div>   
+
+    </header>
+    <main>
+        <div class="ticket_contenedor">
+            <div class="cards">
+                <div class="ticket_card estudiante_color">
+                    <h3 class="card_categoria">Estudiante</h3>
+                    <p class="card_categoria">Tienen un descuento</p>
+                    <p class="card_porcentaje">80%</p>
+                    <small class="card_presentar">* presentar documentacion</small>
+                </div>
+                <div class="ticket_card trainee_color">
+                    <h3 class="card_categoria">Trainee</h3>
+                    <p class="card_categoria">Tienen un descuento</p>
+                    <p class="card_porcentaje">50%</p>
+                    <small class="card_presentar">* presentar documentacion</small>
+                </div>
+                <div class="ticket_card junior_color">
+                    <h3 class="card_categoria">Junior</h3>
+                    <p class="card_categoria">Tienen un descuento</p>
+                    <p class="card_porcentaje">15%</p>
+                    <small class="card_presentar">* presentar documentacion</small>
+                </div>
+            </div>
+            <div class="venta_titulo">
+                <h5>Venta</h5>
+                <h2>Valor de ticket $200</h2>
+            </div>
+            <form cation="" class="formulario_venta" id="formulario">
+                <input class="venta_nombre" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input class="venta_apellido" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                <input class="venta_correo" type="email" name="correo" id="correo" placeholder="Correo">
+                <div class="div_interno_ventas">
+                    <label for="cantidad" >Cantidad</label>
+                    <input class="venta_cantidad" type="number" name="cantidad" id="cantidad" placeholder="Cantidad">
+                </div>
+                <div class="div_interno_ventas">
+                    <label for="categoria">Categoria</label>
+                    <select class="venta_tipo" name="categoria" id="seleccion">
+                        <option value="sin_categoria">Sin categoria</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                    </select>
+                </div>
+                
+                <span class="error" id="error"></span>
+                <div class="total">
+                    <p id="aPagar">Total a pagar: $<span id="total"></span></p>
+                </div>
+                <div class="botones">
+                    <button class="boton_form" id="borrar">Borrar</button>
+                    <button class="boton_form" id="resumen">Resumen</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <a href="#">Preguntas<br class="salto"> frecuentes</a>
+            <a href="#">Contáctanos</a>
+            <a href="#">Prensa</a>
+            <a href="#">Conferencias</a>
+            <a href="#">Términos y<br class="salto"> condiciones</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Estudiantes</a>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>

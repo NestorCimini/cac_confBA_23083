@@ -1,0 +1,218 @@
+/* .encabezado{
+    height: 8vh;
+} */
+
+.ticket_contenedor{
+    height: 95vh;
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards{
+    height: 155px;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket_card{
+    width: 33%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.estudiante_color{
+    border: 2px solid #3291f8;
+}
+
+.trainee_color{
+    border: 2px solid #44b0c1
+}
+
+.junior_color{
+    border: 2px solid #f8c837;
+}
+
+.card_porcentaje{
+    font-weight:900;
+}
+
+.card_presentar{
+    font-weight: 300;
+}
+
+.venta_titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.venta_titulo h2,
+.venta_titulo h5{
+    text-transform: uppercase;
+}
+
+.venta_titulo h5{
+    font-weight: normal;
+}
+
+.venta_titulo h2{
+    margin-top: 5px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.formulario_venta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.venta_nombre,
+.venta_apellido,
+.venta_correo,
+.venta_cantidad,
+.venta_tipo {
+    height: 35px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5%;
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+
+::placeholder,
+select{
+    color:#a1a1a1;
+}
+
+.venta_nombre,
+.venta_apellido{
+    width: 49%;
+}
+
+.venta_correo{
+    width: 100%;
+    border-radius: 3%;
+}
+
+* input:focus,
+select:focus{
+    background-color: #cce5ff;
+    outline: 1px solid #1656a3;
+    color: #1656a3;
+}
+
+.div_interno_ventas{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.div_interno_ventas label{
+    font-size: 1rem;
+}
+
+.error{
+    color: #f31;
+    padding-left: 5px;
+    font-size: 0.8rem;
+}
+
+.total {
+    width: 100%;
+    height: 40px;
+    background-color: #cce5ff;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.total p{
+    color: #1656a3;
+}
+
+.botones {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton_form {
+    width: 49%;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #97c93e;
+    color: #fff;
+
+}
+
+
+/*--------------------------------Responsive---------------------------------------*/
+
+@media screen and (max-width:576px){
+
+    .ticket_contenedor{
+        height: auto;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .ticket_card{
+        width: 50%;
+        height: 150px;
+        padding: 3%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .estudiante_color{
+        background-color: #3291f810;
+        border: 2px solid #3291f8;
+    }
+    
+    .trainee_color{
+        background-color: #44b0c110;
+        border: 2px solid #44b0c1
+    }
+    
+    .junior_color{
+        background-color: #f8c83710;
+        border: 2px solid #f8c837;
+    }
+
+    .venta_titulo{
+        margin-top: 20px;
+    }
+
+    .footer{
+        margin-top: 20px;
+    }
+
+    .venta_titulo h2{
+        margin-top: 5px;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .formulario_venta{
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
